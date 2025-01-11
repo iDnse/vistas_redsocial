@@ -1,0 +1,95 @@
+:root{
+    --morado: #5333ED;
+    --celeste:#50B0F0;
+    --gris: #6E7076;
+    --light: #F5F5F5;
+    --dark: #222222;
+    --extra-small:1.2rem;
+    --small:1.6rem;
+    --regular:1.8rem;
+    --large:2rem;
+    --extra-large:2.4rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.main-container-left{
+    padding: 12px 36px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 1fr;
+    background-color: var(--morado);
+    color: var(--light);
+}
+.main-container-left header, .main-container-left footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start
+}
+.main-container-left header h1{
+    font-size: var(--extra-large);
+    margin-bottom: 12px;
+}
+.main-container-left header h2{
+    font-size: var(--large);
+    margin-bottom: 12px;
+}
+.main-container-left footer{
+    align-items: center
+}
+.main-container-left footer p{
+    font-size: var(--extra-small);
+}
+.main-container-right{
+    width: 100%; 
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    background-color: var(--light);
+}
+
+.main-container-right .main-container-right-form{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 12px;
+    gap: 12px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: var(--morado);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.main-container-right .main-container-right-form h2{
+    font-size: var(--large);
+    color: var(--light);
+}
+.main-container-right-form .container-form{
+    height: 100%;
+    background-color: var(--light);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    padding: 12px;
+}
+
+.main-container-right-form .container-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
